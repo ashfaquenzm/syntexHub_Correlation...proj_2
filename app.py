@@ -135,7 +135,7 @@ selected_features = st.multiselect(
 
 if len(selected_features) >= 2:
     pairplot_fig = sns.pairplot(
-        df[selected_features], corner=True, diag_kind="kde", corner_mask=True
+        df[selected_features], corner=True, diag_kind="kde"
     )
     st.pyplot(pairplot_fig.fig)
 else:
